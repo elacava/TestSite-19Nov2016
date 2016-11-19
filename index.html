@@ -1,0 +1,188 @@
+<html>
+	<head>
+			<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="style.css">
+			
+	</head>
+
+	<body>
+		<title>Tab name on the browser!</title>
+		<header>
+			<div class="container" style="text-align:center";>
+				<div class="jumbotron">
+					<h1>Hello!</h1>
+					<p class="lead">Learn how to code at Kellogg.
+					</p>
+					<p>
+						<a class="btn btn-lg btn-success"href="#"role="button">Learn more</a>
+					</p>
+				</div>
+			</div>
+
+		</header>
+
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" datatoggle="collapse" data-target="#navbar" aria-expanded="false" ariacontrols="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Awesome Project</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#overview">Overview</a></li>
+						<li><a href="#features">Features</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+			<h1>My first site!</h1><br>
+			<p>This is my first <strong>real</strong> paragraph!><br>
+			<img id ="picture1" src="C:\Users\elisa\Desktop\KelloggSOM_V_CMYK.jpg">
+			<p id="paragraph1"> Some text.</p></p><br>
+			<p> Let's make a cool statement. <strong>Hello</strong>
+			<small>Whoa</small>
+			<em>Wassup</em>
+			<a href="http://www.google.com">I link directly to Google</a> and
+			<a href="http://www.google.com" target="_blank">I will open Google in a new tab.</a>
+			<!--This is just a comment yo! it doesn't show up on the page-->
+			<p class="priority"> Some text. </p>
+
+			<div>
+			<h4>New Section Headline</h4>
+			<p>Whoopdeedoo look at me!</p>
+			</div>
+
+			<button type="button"onclick="document.getElementById('myParagraph').innerHTML ='Hello World'">Click</button>
+			<script>
+				function applyStyling() {
+					var paragraph = document.getElementById("prettyParagraph");
+					paragraph.style.color = "green";
+					paragraph.style.fontSize = "29px";
+					paragraph.style.fontWeight = "700";
+				}
+			</script>
+
+		<div class="container">
+			<div class="row">
+			<div class="col-md-4">I am column 1.</div>
+			<div class="col-md-4">I am column 2.</div>
+			<div class="col-md-4">I am column 3.</div>
+			</div><br>
+
+			<div class="row">
+			<div class="col-md-8">I am a larger column.</div>
+			<div class="col-md-2">I am a smaller column.</div>
+			<div class="col-md-2">I am a smaller column.</div>
+			</div>
+		</div>
+	
+		<div>
+			<h4>Product Features</h4>
+			<p>
+			Our product has <span style="color:red">state-of-the art</span> features and here they are:
+			</p>
+		</div>
+	
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+
+		<ul style="list-style-type:square">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+
+		<ol>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+
+		<img style = "margin-left: auto; margin-right:auto;" src="http://www.cognitir.com/static/img/classroom.jpg">
+		<img src="http://geology.com/world/world-map.gif">
+
+		<script>
+			// var result = 5 + 3;
+			// alert("5 + 3 is " + result);
+		</script>
+
+		<input id="numericInput" type="number">
+			<p id="result"></p>
+			<p id="myParagraph"></p>
+			<button type="button" onclick="testInput()">Test Input!</button>
+		<input id="numericInput" type="number">
+		<p id="result"></p>
+		<button type="button" onclick="testInput()">Test Input</button>
+
+		<script>
+			function testInput() {
+				// Create variable to store test result
+				var text;
+				// Get the value of the input field with id="numb"
+				var x = document.getElementById("numericInput").value;
+				if (isNaN(x) || x < 0 || x > 99) {
+					text = "Wrong input";
+				} else {
+					text = "Correct input";
+				}
+				// Display result
+				document.getElementById("result").innerHTML = text;
+			}
+		</script>
+
+		<p id="myParagraph"></p>
+		<button type="button" onclick="document.getElementById('myParagraph').innerHTML "= "This is randomly appearing.'">Click<button>
+		
+		>h1 id="prettyHeader">This is a header</h1>
+		<p id="pretty">This will be pretty.</p>
+		<button type="button" onclick="applyStyling()">Make it pretty!</button>
+		<script>
+			function apply() {
+				var para = document.getElementByID("pretty");
+				para.style.color = "green";
+			}
+		
+			function applyStyling() {
+				var paragraph = document.getElementById("prettyParagraph");
+				paragraph.style.color = "green";
+				paragraph.style.fontSize = "29px";
+				paragraph.style.fontWeight = "700";
+			}
+			function applyHeader() {
+				var para = document.getElementByID("pretty");
+				para.style.color = "green";
+			}
+		</script>
+		
+		<h4>Oh the places you'll go!</h4>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						I am the first element in the carousel.
+					</div>
+					<div class="item">
+						I am the second element in the carousel.
+					</div>
+				</div>
+			</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#myCarousel").carousel({interval: 4000});
+			});
+		</script>
+	
+	</body>
+</html>
+

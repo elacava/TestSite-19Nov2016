@@ -1,0 +1,40 @@
+#paragraph1 {
+	text-align: center;
+	color: green;
+}
+
+img {
+	height: 20%;
+	width: 20%;
+}
+
+img.smaller {
+	height:15%;
+	width: 15%;
+}
+
+img {
+	margin: 20px;
+}
+
+img {
+	height: 200px;
+	width: 300px;
+}
+
+#picture1 {
+	height: 30%;
+	width: 30%;
+	margin: auto;
+}
+
+body {
+	background-color: rgb(199,231,220);
+}
+h1,h4,p {
+	font-family:Helvetica, "Trebuchet MS", sans-serif;
+}
+.priority {
+	/*	text-align: center;*/
+	font-size: 45px;
+}
